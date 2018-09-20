@@ -129,3 +129,11 @@ cd $HADOOP_HOME/sbin/
 
 ```
 
+## Fixes
+
+```
+sudo chown pi /mnt/usb/hdfs -R
+sudo chmod 750 /mnt/usb/hdfs
+
+
+```
