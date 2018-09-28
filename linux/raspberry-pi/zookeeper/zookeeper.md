@@ -55,8 +55,14 @@ SyslogIdentifier=zookeeper
 [Install]
 WantedBy=multi-user.target' | sudo tee /etc/systemd/system/zookeeper.service
 
+```
+
+```sh
 sudo systemctl start zookeeper
 ```
 
-rsync -avxP /opt/hadoop/ user@slave-01:/opt/hadoop/
+
+```
+# rsync -avxP /opt/hadoop/ user@slave-01:/opt/hadoop/
+```
 
