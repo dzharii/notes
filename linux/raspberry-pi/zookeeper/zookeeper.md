@@ -5,6 +5,8 @@
 * [append a text on the top of the file](https://stackoverflow.com/questions/6141088/append-a-text-on-the-top-of-the-file)
 
 
+See [Zookeeper bin releases download site](https://www.apache.org/dyn/closer.cgi/zookeeper/)
+
 ```sh
 ZK_RELEASE_VER=3.4.13
 echo "Make a zookeeper system user"
@@ -55,4 +57,6 @@ WantedBy=multi-user.target' | sudo tee /etc/systemd/system/zookeeper.service
 
 sudo systemctl start zookeeper
 ```
+
+rsync -avxP /opt/hadoop/ user@slave-01:/opt/hadoop/
 
