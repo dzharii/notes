@@ -83,3 +83,21 @@ sudo systemctl enable zookeeper
 sudo systemctl enable kafka
 
 ```
+
+## Testing
+
+Start producer on rp0
+
+```
+cd /opt/kafka
+./bin/kafka-console-producer.sh --broker-list rp0:9092  -pic v-topic
+```
+
+Start consumer on rp1
+
+```
+cd /opt/kafka
+./bin/kafka-console-consumer.sh --bootstrap-server rp0:9092 --topic v-topic --from-beginning
+```
+
+write something in producer console, hit Enter and check consumer
