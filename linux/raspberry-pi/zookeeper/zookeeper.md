@@ -1,6 +1,8 @@
 # Zookeeper on Raspberry PI
 
 * [What is the proper way to install ZooKeeper on Ubuntu 16.04 for both standalone and multi-node deployment?](https://askubuntu.com/questions/1022575/what-is-the-proper-way-to-install-zookeeper-on-ubuntu-16-04-for-both-standalone)
+* [ZooKeeper Getting Started Guide](https://zookeeper.apache.org/doc/r3.1.2/zookeeperStarted.html)
+* [Running Kafka on Raspberry Pi Cluster](https://github.com/keiraqz/RaspPiDemo/blob/master/kafka_config/README.md)
 * [Introduction to Perl one-liners](http://www.catonmat.net/blog/introduction-to-perl-one-liners/)
 * [append a text on the top of the file](https://stackoverflow.com/questions/6141088/append-a-text-on-the-top-of-the-file)
 
@@ -57,10 +59,64 @@ WantedBy=multi-user.target' | sudo tee /etc/systemd/system/zookeeper.service
 
 ```
 
+## Edit zoo.cfg: add cluster server
+
+Given rp0, rp1, rp2 IPs already defined in /etc/hosts
+
+```
+sudo perl -pi -e '$line = 1 if /server.1=/; print "server.1=rp0:2888:3888\nserver.2=rp1:2888:3888\nserver.3=rp2:2888:3888\n" if !$line&&eof' /opt/zookeeper/conf/zoo.cfg
+```
+
 ```sh
 sudo systemctl start zookeeper
 ```
 
+## put myid into each node
+
+``
+# on rp0
+echo "1" | sudo tee /var/lib/zookeeper/myid && sudo chown -R zookeeper:nogroup /var/lib/zookeeper
+
+# on rp1
+echo "2" | sudo tee /var/lib/zookeeper/myid && sudo chown -R zookeeper:nogroup /var/lib/zookeeper
+
+# on rp2
+echo "3" | sudo tee /var/lib/zookeeper/myid && sudo chown -R zookeeper:nogroup /var/lib/zookeeper
+```
+
+## Testing commands
+```
+# dump
+# Lists the outstanding sessions and ephemeral nodes. This only works on the leader.
+echo dump | nc rp0 2181
+
+# envi
+# Print details about serving environment
+echo envi | nc rp0 2181
+
+# kill
+# Shuts down the server. This must be issued from the machine the ZooKeeper server is running on.
+echo envi | nc rp0 2181
+
+# reqs
+# List outstanding requests
+echo reqs | nc rp0 2181
+
+# ruok
+# Tests if server is running in a non-error state. The server will respond with imok if it is running. Otherwise it will not respond at all.
+echo ruok | nc rp0 2181
+# returns imok
+
+# srst
+# Reset statistics returned by stat command.
+echo srst | nc rp0 2181
+
+# stat
+# Lists statistics about performance and connected clients.
+echo stat | nc rp0 2181
+
+
+```
 
 ```
 # rsync -avxP /opt/hadoop/ user@slave-01:/opt/hadoop/
