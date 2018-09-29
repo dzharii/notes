@@ -76,3 +76,10 @@ WantedBy=multi-user.target' | sudo tee /etc/systemd/system/kafka.service
 ```sh
 sudo systemctl start kafka
 ```
+
+start on boot
+```sh
+sudo systemctl enable zookeeper
+sudo systemctl enable kafka
+
+```
