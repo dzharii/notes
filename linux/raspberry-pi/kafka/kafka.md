@@ -3,7 +3,8 @@
 * [Set up a Kafka cluster with Raspberry Pi](https://medium.com/@oliver_hu/set-up-a-kafka-cluster-with-raspberry-pi-2859005a9bed)
 * [How to Set Up Kafka](https://dzone.com/articles/kafka-setup)
 * [Running Kafka on Raspberry Pi Cluster](https://github.com/keiraqz/RaspPiDemo/blob/master/kafka_config/README.md)
-*[kafka installation and systemd](https://gist.github.com/vipmax/9ceeaa02932ba276fa810c923dbcbd4f)
+* [kafka installation and systemd](https://gist.github.com/vipmax/9ceeaa02932ba276fa810c923dbcbd4f)
+* [KAFKA V0.11 DISTRIBUTED CLUSTER CONFIG](https://bigdatagurus.wordpress.com/2017/07/28/kafka-which-knobs-to-turn/)
 
 Install zookeeper first: [Zookeeper on Raspberry PI](../zookeeper/zookeeper.md)
 
