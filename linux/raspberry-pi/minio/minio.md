@@ -20,7 +20,7 @@ echo "create dirs"
 sudo mkdir -p /opt/miniobin
 sudo mkdir -p /var/run/minio
 sudo mkdir -p /mnt/usb/minio/data
-sudo mkdir -p /mnt/usb1/minio/data
+
 
 sudo cp ./minio /opt/miniobin/
 
@@ -28,7 +28,7 @@ echo "ensure permissions"
 sudo chown -R minio:nogroup /opt/miniobin
 sudo chown -R minio:nogroup /var/run/minio
 sudo chown -R minio:nogroup /mnt/usb/minio/data
-sudo chown -R minio:nogroup /mnt/usb1/minio/data
+
 
 
 echo "create systemd service"

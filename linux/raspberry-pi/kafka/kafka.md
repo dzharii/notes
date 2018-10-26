@@ -23,7 +23,7 @@ echo "create initial directories"
 sudo mkdir -p /opt/kafka
 sudo mkdir -p /var/run/kafka
 sudo mkdir -p /mnt/usb/kafka/data
-sudo mkdir -p /mnt/usb1/kafka/data
+
 
 echo "extract archive"
 sudo tar -xvzf kafka_${KF_VER}.tgz --directory /opt/kafka --strip-components 1
@@ -35,7 +35,7 @@ sudo cp --no-clobber /opt/kafka/config/server.properties /opt/kafka/config/serve
 sudo perl -i -e'$BROKERID = shift; while (<>) { s!^broker.id=(?:.+)?$!broker.id=$BROKERID!m; print }' "$BROKERID" /opt/kafka/config/server.properties
 
 # log.dirs=
-sudo perl -i -e'$LOGDIRS = shift; while (<>) { s!^log.dirs=(?:.+)?$!log.dirs=$LOGDIRS!m; print }' "/mnt/usb/kafka/data,/mnt/usb1/kafka/data" /opt/kafka/config/server.properties
+sudo perl -i -e'$LOGDIRS = shift; while (<>) { s!^log.dirs=(?:.+)?$!log.dirs=$LOGDIRS!m; print }' "/mnt/usb/kafka/data" /opt/kafka/config/server.properties
 
 # zookeeper.connect=rp0:2181,rp1:2181,rp2:2181
 sudo perl -i -e'$ZKCON = shift; while (<>) { s!^zookeeper.connect=(?:.+)?$!zookeeper.connect=$ZKCON!m; print }' "rp0:2181,rp1:2181,rp2:2181" /opt/kafka/config/server.properties
@@ -50,7 +50,6 @@ echo "ensure permissions"
 sudo chown -R kafka:nogroup /opt/kafka
 sudo chown -R kafka:nogroup /var/run/kafka
 sudo chown -R kafka:nogroup /mnt/usb/kafka/data
-sudo chown -R kafka:nogroup /mnt/usb1/kafka/data
 
 
 echo "create systemd service"

@@ -22,7 +22,7 @@ wget "https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-${ES_VE
 
 echo "create initial directories"
 sudo mkdir -p /opt/elasticsearch
-sudo mkdir -p /mnt/usb1/elasticsearch/data
+sudo mkdir -p /mnt/usb/elasticsearch/data
 sudo mkdir -p /var/run/elasticsearch
 sudo mkdir -p /var/log/elasticsearch
 
@@ -41,7 +41,7 @@ discovery.zen.minimum_master_nodes: 1
 discovery.zen.ping.unicast.hosts: ["rp0"]
 xpack.ml.enabled: false
 bootstrap.system_call_filter: false
-path.data: /mnt/usb1/elasticsearch/data
+path.data: /mnt/usb/elasticsearch/data
 path.logs: /var/log/elasticsearch
 ' | sudo tee /opt/elasticsearch/config/elasticsearch.yml
 
@@ -122,7 +122,7 @@ echo '## JVM configuration
 echo "ensure permissions"
 sudo chown -R elasticsearch:nogroup  /opt/elasticsearch
 sudo chown -R elasticsearch:nogroup  /var/run/elasticsearch
-sudo chown -R elasticsearch:nogroup  /mnt/usb1/elasticsearch/data
+sudo chown -R elasticsearch:nogroup  /mnt/usb/elasticsearch/data
 sudo chown -R elasticsearch:nogroup  /var/log/elasticsearch
 
 echo "create systemd service"
