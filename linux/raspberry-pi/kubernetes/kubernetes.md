@@ -74,3 +74,39 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v1.10.1/
 
 ```
 
+# Non-secure kubectl proxy service
+
+kubectl proxy --address 0.0.0.0 --accept-hosts '.*'
+
+```sh
+echo '[Unit]
+Description=kubectl proxy service
+After=network.target
+
+[Service]
+Type=simple
+User=pi
+ExecStart=/usr/bin/kubectl proxy --address 0.0.0.0 --accept-hosts ''.*''
+ExecStop=/bin/kill -9 $MAINPID
+Restart=on-failure
+SyslogIdentifier=kubectl-proxy
+
+[Install]
+WantedBy=multi-user.target' | sudo tee /etc/systemd/system/kubectl-proxy.service
+
+```
+
+```sh
+sudo systemctl start kubectl-proxy
+```
+
+```sh
+systemctl status kubectl-proxy
+```
+
+start on boot
+```sh
+sudo systemctl enable kafka-manager
+
+
+```
