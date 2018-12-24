@@ -98,15 +98,14 @@ WantedBy=multi-user.target' | sudo tee /etc/systemd/system/kubectl-proxy.service
 
 ```sh
 sudo systemctl start kubectl-proxy
-```
-
-```sh
+sudo systemctl stop kubectl-proxy
 systemctl status kubectl-proxy
+
 ```
 
 start on boot
 ```sh
-sudo systemctl enable kafka-manager
+sudo systemctl enable kubectl-proxy
 
 
 ```
