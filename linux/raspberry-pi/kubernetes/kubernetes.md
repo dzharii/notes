@@ -18,6 +18,7 @@ ff02::2         ip6-allrouters
 192.168.1.142         rpb02
 192.168.1.143         rpb03
 192.168.1.144         rpb04
+192.168.1.147         odroid
 ' | sudo tee /etc/hosts
 
 
