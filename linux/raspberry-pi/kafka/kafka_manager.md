@@ -51,7 +51,7 @@ Type=simple
 PIDFile=/var/run/kafka-manager/kafka-manager.pid
 User=kafkamanager
 Group=nogroup
-ExecStart=/opt/kafka-manager/bin/kafka-manager
+ExecStart=/opt/kafka-manager/bin/kafka-manager -Dpidfile.path=/dev/null
 ExecStop=/bin/kill -9 $MAINPID
 Restart=on-failure
 SyslogIdentifier=kafka-manager
