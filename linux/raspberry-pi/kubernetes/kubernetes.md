@@ -2,6 +2,46 @@
 
 [Kubernetes on (vanilla) Raspbian Lite](https://gist.github.com/alexellis/fdbc90de7691a1b9edb545c17da2d975)
 
+[Install Kubernetes 1.13.1 on Raspberry Pi Cluster](https://gist.github.com/alexellis/fdbc90de7691a1b9edb545c17da2d975#gistcomment-2793682)
+
+
+...
+
+## Setup master node01
+
+
+```
+sudo kubeadm init --token-ttl=0 --apiserver-advertise-address=192.168.1.155 --kubernetes-version v1.13.2
+```
+Make local config for pi user, so login as pi on node01
+
+```
+
+mkdir -p $HOME/.kube
+sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+sudo chown $(id -u):$(id -g) $HOME/.kube/config
+
+```
+
+
+Check it's working (except the dns pods wont be ready)
+
+```
+kubectl get pods --all-namespaces
+
+```
+
+Setup kubernetes ovverlay networking
+
+```
+kubectl apply -f https://git.io/weave-kube-1.6
+kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')"
+```
+
+
+
+
+
 
 ```sh
 
