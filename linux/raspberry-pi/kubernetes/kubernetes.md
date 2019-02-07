@@ -31,11 +31,16 @@ kubectl get pods --all-namespaces
 
 ```
 
-Setup kubernetes ovverlay networking
+Setup kubernetes overlay networking
 
 ```
 kubectl apply -f https://git.io/weave-kube-1.6
 kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')"
+```
+
+
+```
+kubectl -n kube-system delete -f https://git.io/weave-kube-1.6
 ```
 
 
