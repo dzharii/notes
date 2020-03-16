@@ -12,3 +12,4 @@
 [Tree-walking algorithms: Incrementally performing a postorder walk of an N-ary tree](https://devblogs.microsoft.com/oldnewthing/20200108-00/?p=103307) С++
 [NeutralinoJS: Lightweight Electron alternative using native browser controls](https://neutralino.js.org/)
 [date-fns/date-fns](https://github.com/date-fns/date-fns) Modern JavaScript date utility library
+[Scaling your API with rate limiters](https://stripe.com/blog/rate-limiters)
