@@ -13,3 +13,64 @@
 [NeutralinoJS: Lightweight Electron alternative using native browser controls](https://neutralino.js.org/)
 [date-fns/date-fns](https://github.com/date-fns/date-fns) Modern JavaScript date utility library
 [Scaling your API with rate limiters](https://stripe.com/blog/rate-limiters)
+[playwright](https://github.com/microsoft/playwright) Node library to automate Chromium, Firefox and WebKit with a single API
+[centrifugo](https://github.com/centrifugal/centrifugo) Scalable real-time messaging in language-agnostic way
+
+## Docker
+[Docker and Node.js Best Practices](https://github.com/nodejs/docker-node/blob/master/docs/BestPractices.md)
+
+## FrontEnd
+
+[stereobooster/react-snap](https://github.com/stereobooster/react-snap) Zero-configuration framework-agnostic static prerendering for SPAs
+[how to manage HTML DOM](https://htmldom.dev/)
+[]()
+[]()
+[]()
+[]()
+[]()
+[]()
+
+### C#
+[sidristij/dotnetbook](https://github.com/sidristij/dotnetbook) .NET Platform Architecture book (English, Chinese, Russian)
+[]()
+[]()
+[]()
+[]()
+[]()
+[]()
+
+## SIMD
+
+[SIMD Intrinsics on Managed Language Runtimes](https://astojanov.github.io/publications/preprint/004_cgo18-simd.pdf)
+[simdjson/simdjson](https://github.com/simdjson/simdjson) Parsing gigabytes of JSON per second https://simdjson.org
+[wp: Parsing Gigabytes of JSON per Second](https://arxiv.org/pdf/1902.08318.pdf)
+[wp: Flare: Native Compilation for Heterogeneous Workloads in Apache Spark](https://arxiv.org/pdf/1703.08219.pdf)
+
+## GameDev
+[How to Build a Multiplayer (.io) Web Game, Part 1](https://victorzhou.com/blog/build-an-io-game-part-1/)
+[]()
+[]()
+[]()
+[]()
+[]()
+[]()
+[]()
+
+
+## Statistics
+
+
+1. A Novel Technique for Long-Term Anomaly Detection in the Cloud. https://www.usenix.org/system/files/conference/hotcloud14/hotcloud14-vallis.pdf
+2. Anomaly Detection : A Survey. http://cucis.ece.northwestern.edu/projects/DMS/publications/AnomalyDetection.pdf
+3. Detection of Outliers in a Time Series of Available Parking Spaces. https://www.hindawi.com/journals/mpe/2013/416267/
+4. Grubbs' test for outliers. https://en.wikipedia.org/wiki/Grubbs%27_test_for_outliers
+5. Исследование критериев типа Граббса проверки наблюдений на аномальность. http://ami.nstu.ru/~headrd/seminar/Kontrol_Q/grubbs_1.htm
+6. Introducing practical and robust anomaly detection in a time series. https://blog.twitter.com/2015/introducing-practical-and-robust-anomaly-detection-in-a-time-series
+7. Package ‘outliers’. https://cran.r-project.org/web/packages/outliers/outliers.pdf
+8. Dynamic, browser-based visualization library http://visjs.org. https://github.com/almende/vis
+9. https://github.com/odnoklassniki/one-nio
+
+
+## Humor
+
+[Twitter: Trump DBA](https://twitter.com/TrumpDBA)
