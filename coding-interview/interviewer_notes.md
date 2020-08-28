@@ -11,3 +11,4 @@
 * Be available for questions, but let them do the problem solving. If you see errors, coach them through to finding a solution but don't directly call out the error and solution.
 * Treat final code the same way you would coach someone on a PR. E.g., if they have some repeated logic, ask to DRY.
 * Look for and coach unneeded mutable state, what should be public/private/static methods, var naming/clarity, separation of concerns, tradeoffs. You shouldn't be teaching these concepts, but rather assessing how fluent the candidate is in applying the concepts when pressed to.
+* [You suck at technical interviews | Seldo.com](https://seldo.com/posts/you_suck_at_technical_interviews)

@@ -9,3 +9,6 @@
 * [An Illustrated Proof of the CAP Theorem](https://mwhittaker.github.io/blog/an_illustrated_proof_of_the_cap_theorem/)
 * [yangshun/tech-interview-handbook](https://github.com/yangshun/tech-interview-handbook) Materials to help you rock your next coding interview
 * [Back-End Developer Interview Questions](https://github.com/arialdomartini/Back-End-Developer-Interview-Questions#toc)
+* [donnemartin/system-design-primer: Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards.](https://github.com/donnemartin/system-design-primer) 
+* [Heap | Tech Interview Handbook](https://yangshun.github.io/tech-interview-handbook/algorithms/heap/)
+* [Designing a URL Shortening service like TinyURL - Grokking the System Design Interview](https://www.educative.io/courses/grokking-the-system-design-interview/m2ygV4E81AR)
