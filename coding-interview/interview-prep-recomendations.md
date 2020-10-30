@@ -1,7 +1,5 @@
 ## Facebook
 
-
-
 ### What to Expect (min number of interviews):
 
 
@@ -32,6 +30,9 @@ The design interview focuses on systems - think distributed systems and APIs. Yo
 ### Read papers:
 
 * [Scaling Memcache at Facebook](https://www.usenix.org/system/files/conference/nsdi13/nsdi13-final170_update.pdf&sa=U&ei=gWJjU97pOeqxsQSDkYDAAg&ved=0CBsQFjAA&usg=AFQjCNGMeuWne9ywncbgux_XiZW6lQWHNw)
+
+
+![](xbi.jpeg)
 
 
 # Microsoft
