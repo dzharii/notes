@@ -1,3 +1,4 @@
+* [Interview advice that got me offers from Google, Microsoft, and Stripe](https://www.zainrizvi.io/blog/the-interviewing-advice-no-one-shares/)
 * [labuladong/fucking-algorithm at english](https://github.com/labuladong/fucking-algorithm/tree/english) A guide to learning algorithms through LeetCode
 * [jwasham/coding-interview-university: A complete computer science study plan to become a software engineer.](https://github.com/jwasham/coding-interview-university)
 * [Top 10 Algorithms for Coding Interview](https://www.programcreek.com/2012/11/top-10-algorithms-for-coding-interview/) list of coding problem solutions
