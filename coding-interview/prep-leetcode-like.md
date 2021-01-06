@@ -14,3 +14,4 @@
 * [donnemartin/system-design-primer: Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards.](https://github.com/donnemartin/system-design-primer) 
 * [Heap | Tech Interview Handbook](https://yangshun.github.io/tech-interview-handbook/algorithms/heap/)
 * [Designing a URL Shortening service like TinyURL - Grokking the System Design Interview](https://www.educative.io/courses/grokking-the-system-design-interview/m2ygV4E81AR)
+* [Facebook senior software engineer interview: the only post you’ll need to read | by David Qorashi | Jan, 2021 | Medium](https://daqo.medium.com/facebook-senior-software-engineer-interview-the-only-post-youll-need-to-read-e4604ff2336d)
