@@ -17,3 +17,5 @@
 * [Facebook senior software engineer interview: the only post you’ll need to read | by David Qorashi | Jan, 2021 | Medium](https://daqo.medium.com/facebook-senior-software-engineer-interview-the-only-post-youll-need-to-read-e4604ff2336d)
 * [trekhleb/javascript-algorithms: Algorithms and data structures implemented in JavaScript with explanations and links to further readings](https://github.com/trekhleb/javascript-algorithms)
 * [Unpacking Interview Questions - Jacob Kaplan-Moss](https://jacobian.org/series/unpacking-interview-questions/)
+* [A Bigint Calculator in C](https://www.hanshq.net/bigint.html)
+
