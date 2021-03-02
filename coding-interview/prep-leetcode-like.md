@@ -11,11 +11,11 @@
 * [An Illustrated Proof of the CAP Theorem](https://mwhittaker.github.io/blog/an_illustrated_proof_of_the_cap_theorem/)
 * [yangshun/tech-interview-handbook](https://github.com/yangshun/tech-interview-handbook) Materials to help you rock your next coding interview
 * [Back-End Developer Interview Questions](https://github.com/arialdomartini/Back-End-Developer-Interview-Questions#toc)
-* [donnemartin/system-design-primer: Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards.](https://github.com/donnemartin/system-design-primer) 
+* [donnemartin/system-design-primer: Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards.](https://github.com/donnemartin/system-design-primer)
 * [Heap | Tech Interview Handbook](https://yangshun.github.io/tech-interview-handbook/algorithms/heap/)
 * [Designing a URL Shortening service like TinyURL - Grokking the System Design Interview](https://www.educative.io/courses/grokking-the-system-design-interview/m2ygV4E81AR)
-* [Facebook senior software engineer interview: the only post you’ll need to read | by David Qorashi | Jan, 2021 | Medium](https://daqo.medium.com/facebook-senior-software-engineer-interview-the-only-post-youll-need-to-read-e4604ff2336d)
+* [Facebook senior software engineer interview: the only post youï¿½ll need to read | by David Qorashi | Jan, 2021 | Medium](https://daqo.medium.com/facebook-senior-software-engineer-interview-the-only-post-youll-need-to-read-e4604ff2336d)
 * [trekhleb/javascript-algorithms: Algorithms and data structures implemented in JavaScript with explanations and links to further readings](https://github.com/trekhleb/javascript-algorithms)
 * [Unpacking Interview Questions - Jacob Kaplan-Moss](https://jacobian.org/series/unpacking-interview-questions/)
 * [A Bigint Calculator in C](https://www.hanshq.net/bigint.html)
-
+* [Top 100 Entry-Level Interview Questions and Awesome Answers for Each](https://collegegrad.com/tough-interview-questions)
