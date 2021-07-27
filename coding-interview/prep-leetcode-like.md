@@ -19,3 +19,4 @@
 * [Unpacking Interview Questions - Jacob Kaplan-Moss](https://jacobian.org/series/unpacking-interview-questions/)
 * [A Bigint Calculator in C](https://www.hanshq.net/bigint.html)
 * [Top 100 Entry-Level Interview Questions and Awesome Answers for Each](https://collegegrad.com/tough-interview-questions)
+* [Evolution of tree data structures for indexing: more exciting than it sounds · Erthalion's blog](https://erthalion.info/2020/11/28/evolution-of-btree-index-am/)
