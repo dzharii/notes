@@ -15,7 +15,8 @@ Heidi Howard, the first author of this paper did two videos about her paper:
 - [P: A programming language designed for asynchrony, fault-tolerance and uncertainty - Microsoft Research](https://www.microsoft.com/en-us/research/blog/p-programming-language-asynchrony/)
 - 
 
-
+## Testing 
+- [Testing Distributed Systems](https://asatarin.github.io/testing-distributed-systems/) Curated list of resources on testing distributed systems
 
 ## Redis 
 
