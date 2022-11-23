@@ -13,3 +13,8 @@
 * Look for and coach unneeded mutable state, what should be public/private/static methods, var naming/clarity, separation of concerns, tradeoffs. You shouldn't be teaching these concepts, but rather assessing how fluent the candidate is in applying the concepts when pressed to.
 * [You suck at technical interviews | Seldo.com](https://seldo.com/posts/you_suck_at_technical_interviews)
 * [Ask HN: Questions to ask a company to know you don't want to work there? | Hacker News](https://news.ycombinator.com/item?id=25928641)
+
+
+## Questions
+
+- [InterviewQuestionsSummaryAndReferenceFixed.pdf](./InterviewQuestionsSummaryAndReferenceFixed.pdf) from this talk: [Keynote: Lies Developers Tell Themselves - Billy Hollis - NDC Minnesota - YouTube](https://www.youtube.com/watch?v=cADdwFk2-7U)
